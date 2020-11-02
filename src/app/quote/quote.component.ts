@@ -17,6 +17,27 @@ export class QuoteComponent implements OnInit {
     this.quotes.push(quote);
   }
 
+  deleteQuote(isDelete, index) {
+    if(isDelete){
+      let toDelete = window.confirm(`Are you sure you want to delete this quote?`);
+
+      if(toDelete) {
+       this.quotes.splice(index, 1);
+      }
+    }
+  }
+
+  increaseUpvote(isIncreaseUpvote, index) {
+    if(isIncreaseUpvote){
+      this.quotes[index].numberOfUpvote += 1;
+    }
+  }
+
+  increaseDownvote(isIncreaseDownvote, index) {
+    if(isIncreaseDownvote){
+      this.quotes[index].numberOfDownvote += 1;
+    }
+  }
   constructor() { }
 
   ngOnInit(): void {
