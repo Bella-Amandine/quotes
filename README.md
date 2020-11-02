@@ -2,7 +2,7 @@
 ## By Bella Amandine Muhorakeye
 
 This project is an application which allow users to create quote and have those quotes voted whether they are terrible or intuitive. 
-I was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.0.
+It was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.0.
 
 ## Development server
 
