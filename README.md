@@ -1,7 +1,8 @@
 # Quotes
 ## By Bella Amandine Muhorakeye
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.0.
+This project is an application which allow users to create quote and have those quotes voted whether they are terrible or intuitive. 
+I was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.0.
 
 ## Development server
 
@@ -26,4 +27,7 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Link to Live site 
+http://Bella-Amandine.github.io/quotes/
 # quotes
