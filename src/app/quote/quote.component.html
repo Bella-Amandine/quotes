@@ -11,7 +11,7 @@
                     </div>
                     <div class="card-body">
                         <p [appHighlightQuote]='quote'>{{quote.quoteTitle}}</p>
-                        <p>By <small>{{quote.author}}</small>.</p>
+                        <p>By <span class="author">{{quote.author}}</span>.</p>
                         <app-quote-details (isDelete)='deleteQuote($event, i)' 
                                             (isIncreaseUpvote)='increaseUpvote($event, i)' 
                                             (isIncreaseDownvote)='increaseDownvote($event, i)'  
