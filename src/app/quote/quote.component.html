@@ -6,18 +6,21 @@
                 <div class="card">
                     <div class="card-header">
                         <div class="card-title">
-                            <small class="float-right">{{quote.createdDate | date}}</small>
+                            <small class="float-right">Created On {{quote.createdDate | date}}</small>
                         </div>
                     </div>
                     <div class="card-body">
                         <p [appHighlightQuote]='quote'>{{quote.quoteTitle}}</p>
                         <p>By <span class="author">{{quote.author}}</span>.</p>
-                        <app-quote-details (isDelete)='deleteQuote($event, i)' 
+                        <button class="btn text-info" (click)='toggleDetails(i)'>Toggle Details</button>
+                        <div *ngIf='quote.showDetails'>
+                            <app-quote-details (isDelete)='deleteQuote($event, i)' 
                                             (isIncreaseUpvote)='increaseUpvote($event, i)' 
                                             (isIncreaseDownvote)='increaseDownvote($event, i)'  
                                             class="clearfix" 
                                             [quote]='quote'>
-                        </app-quote-details>
+                            </app-quote-details>
+                        </div>
                     </div>
                 </div>
             </div>

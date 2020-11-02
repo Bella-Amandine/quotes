@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Quote } from '../quote';
+import { ThrowStmt } from '@angular/compiler';
 
 @Component({
   selector: 'app-quote',
@@ -11,6 +12,10 @@ export class QuoteComponent implements OnInit {
   quotes: Quote[] = [];
 
 
+  toggleDetails(index) {
+    this.quotes[index].showDetails = !this.quotes[index].showDetails;
+  }
+  
   addNewQuote(quote) {
     let quoteLength = this.quotes.length;
     quote.id = quoteLength + 1;
