@@ -7,10 +7,7 @@ export class TimePassedPipe implements PipeTransform {
 
   transform(value: any): any {
     let now:any = new Date();
-
-    //let nowWithoutDate:any = new Date(now.getFullYear(), now.getMonth(), now.getDate());
     var timeDifference = Math.abs(now - value);
-
 
     var timeDifferenceSeconds = timeDifference * 0.001;
    

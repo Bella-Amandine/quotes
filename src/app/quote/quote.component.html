@@ -10,9 +10,14 @@
                         </div>
                     </div>
                     <div class="card-body">
-                        <p>{{quote.quoteTitle}}</p>
+                        <p [appHighlightQuote]='quote'>{{quote.quoteTitle}}</p>
                         <p>By <small>{{quote.author}}</small>.</p>
-                        <app-quote-details (isDelete)='deleteQuote($event, i)' (isIncreaseUpvote)='increaseUpvote($event, i)' (isIncreaseDownvote)='increaseDownvote($event, i)'  class="clearfix" [quote]='quote'></app-quote-details>
+                        <app-quote-details (isDelete)='deleteQuote($event, i)' 
+                                            (isIncreaseUpvote)='increaseUpvote($event, i)' 
+                                            (isIncreaseDownvote)='increaseDownvote($event, i)'  
+                                            class="clearfix" 
+                                            [quote]='quote'>
+                        </app-quote-details>
                     </div>
                 </div>
             </div>
